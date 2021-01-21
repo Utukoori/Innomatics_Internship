@@ -1,0 +1,12 @@
+n=int(input())
+A=set(map(int, input().split()))
+m=int(input())
+B=set(map(int, input().split()))
+c=set()
+a=(A.difference(B))
+b=(B.difference(A))
+c.update(a)
+c.update(b)
+c=sorted(c,reverse=False)
+for i in c:
+    print(i)
